@@ -9,12 +9,12 @@ const Footer = () => (
     <Container fluid>
       <Row className={styles.Row}>
         <Col xs="auto" className="text-center">
-          <a href="https://linkedin.com" target="_blank">
+          <a href="https://linkedin.com" target="_blank" rel="noreferrer" className={styles.ATag}>
             <FontAwesomeIcon className={styles.Image} icon={faLinkedin} />
           </a>
         </Col>
         <Col xs="auto" className="text-center">
-          <a href="https://github.com" target="_blank">
+          <a href="https://github.com" target="_blank" rel="noreferrer" className={styles.ATag}>
             <FontAwesomeIcon className={styles.Image} icon={faGithub} />
           </a>
         </Col>
