@@ -1,0 +1,50 @@
+.Container {
+    height: 100%;
+    background-color: #121212;
+  }
+  
+  .Skills {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .Title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fafafa;
+    margin-bottom: 60px;
+  }
+  
+  .Description {
+    color: #fafafa;
+    font-weight: 500;
+    font-size: 1.5rem !important;
+  }
+  
+  .Image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .Image:hover {
+    animation: rotate 0.3s linear;
+  }
+  
+  @keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+  }
+  .Description {
+    font-size: 18px;
+  }
+  

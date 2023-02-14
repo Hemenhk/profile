@@ -1,0 +1,54 @@
+.Header {
+    background-color: white;
+    height: 6%;
+  }
+  
+  .Logo {
+    color: #000;
+    font-size: 2.5rem;
+    font-weight: 900;
+    font-family: "Roboto", sans-serif;
+    padding-left: 25px;
+  }
+  
+  .Logo:hover {
+    color: #3ec1bf;
+    transition: .5s;
+  }
+  
+  .Links {
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+  }
+  .Links::after {
+    content: "";
+    width: 0%;
+    height: 4px;
+    background: #3ec1bf;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  
+  .Links:hover::after {
+    width: 100%;
+  }
+  
+  .Nav {
+    gap: 1rem;
+    padding-right: 25px;
+  }
+  
+  .Toggle {
+    outline: none !important;
+    border: none !important;
+  }
+  
+  @media screen and (max-width: 414px) {
+    .Logo {
+      font-size: 1.6rem;
+    }
+  }
+  

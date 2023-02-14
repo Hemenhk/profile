@@ -1,0 +1,26 @@
+.Container {
+    height: 150px;
+}
+
+.Row {
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+a {
+    padding: 0px 3rem;
+    color: #000;
+    height: 50px;
+    width: 50px;
+}
+
+.Image {
+    height: 50px;
+    width: 50px;
+}
+
+.Image:hover {
+    color: #3ec1bf;
+    transition: .5s;
+}
