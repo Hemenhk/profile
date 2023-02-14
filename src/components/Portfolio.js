@@ -11,7 +11,7 @@ const Portfolio = () => {
       <h2 className={styles.Title}>PORTFOLIO</h2>
       <div className={styles.Projects}>
         <div className={styles.Project}>
-          <a href="https://hemenhk.github.io/strength-house/index.html" target="_blank">
+          <a href="https://hemenhk.github.io/strength-house/index.html" rel="noreferrer" target="_blank">
             <img src={img1} alt="Project 1" />
             <div className={styles.Overlay}>
               <p className={styles.Text}>STRENGTH HOUSE</p>
@@ -19,7 +19,7 @@ const Portfolio = () => {
           </a>
         </div>
         <div className={styles.Project}>
-          <a href="https://locations-p5.herokuapp.com/" target="_blank">
+          <a href="https://locations-p5.herokuapp.com/" rel="noreferrer" target="_blank">
             <img src={img2} alt="Project 2" />
             <div className={styles.Overlay}>
               <p className={styles.Text}>LOCATIONS</p>
@@ -27,7 +27,7 @@ const Portfolio = () => {
           </a>
         </div>
         <div className={styles.Project}>
-          <a href="https://filmstar22.herokuapp.com/" target="_blank">
+          <a href="https://filmstar22.herokuapp.com/" rel="noreferrer" target="_blank">
             <img src={img3} alt="Project 3" />
             <div className={styles.Overlay}>
               <p className={styles.Text}>FILMSTAR</p>
