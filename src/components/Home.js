@@ -23,7 +23,7 @@ const Home = () => {
           <h1>HEMEN</h1>
           <h1>HIWA KAMAL</h1>
           <p className={styles.Paragraph}>
-            FRONT END DEVELOPER, WITH AN EAGERNESS TO LEARN!
+            FRONT END DEVELOPER
           </p>
         </Col>
         <div>
