@@ -8,10 +8,12 @@
     text-align: center;
   }
   
-  .Title {
-    font-size: 36px;
-    font-weight: bold;
+  .Heading {
     color: #fafafa;
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none !important;
     margin-bottom: 60px;
   }
   

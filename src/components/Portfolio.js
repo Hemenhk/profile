@@ -8,7 +8,7 @@ import img3 from "../assets/filmstar.png";
 const Portfolio = () => {
   return (
     <Container fluid className={styles.Portfolio} id="portfolio">
-      <h2 className={styles.Title}>PORTFOLIO</h2>
+      <h2 className={styles.Heading}>PORTFOLIO</h2>
       <div className={styles.Projects}>
         <div className={styles.Project}>
           <a href="https://hemenhk.github.io/strength-house/index.html" rel="noreferrer" target="_blank">

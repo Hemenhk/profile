@@ -14,7 +14,7 @@ import tailwind from '../assets/tailwing.png';
 const Skills = () => {
   return (
     <Container fluid className={`${styles.Skills} ${styles.Container}`} id="skills">
-      <h2 className={styles.Title}>SKILLS</h2>
+      <h2 className={styles.Heading}>SKILLS</h2>
       <Row>
         <Col xs={12} md={6} lg={4}>
           <Image src={html} alt="Skill 1" className={styles.Image} />

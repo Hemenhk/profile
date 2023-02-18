@@ -7,7 +7,7 @@ import styles from "../styles/Contact.module.css";
 const Contact = () => {
   return (
     <Container fluid className={styles.Container} id="contact">
-      <h2 className="text-center">CONTACT</h2>
+      <h2 className={`text-center ${styles.Heading}`}>CONTACT</h2>
       <Row className={styles.Box}>
         <Col xs={12} className={styles.TextContainer}>
           <a

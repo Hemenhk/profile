@@ -47,6 +47,15 @@
   .Project:hover .Overlay {
     opacity: 1;
   }
+
+  .Heading {
+    color: #000;
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none !important;
+    margin-bottom: 25px;
+  }
   
   .Project p {
     margin: 0;

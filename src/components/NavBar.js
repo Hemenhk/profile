@@ -4,7 +4,7 @@ import styles from "../styles/NavBar.module.css";
 
 const NavBar = () => {
   return (
-    <Navbar expand="lg" className={styles.Header}>
+    <Navbar expand="lg"  className={`sticky-top ${styles.Header}`}>
       <Container fluid>
         <Navbar.Brand className={styles.Logo} href="#home">HHK</Navbar.Brand>
         <Navbar.Toggle className={styles.Toggle} aria-controls="basic-navbar-nav" />
@@ -13,8 +13,8 @@ const NavBar = () => {
             <Nav.Link className={styles.Links} href="#home">HOME</Nav.Link>
             <Nav.Link className={styles.Links} href="#about">ABOUT</Nav.Link>
             <Nav.Link className={styles.Links} href="#portfolio">PORTFOLIO</Nav.Link>
-            <Nav.Link className={styles.Links} href="#contact">CONTACT</Nav.Link>
             <Nav.Link className={styles.Links} href="#skills">SKILLS</Nav.Link>
+            <Nav.Link className={styles.Links} href="#contact">CONTACT</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
