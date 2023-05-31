@@ -30,11 +30,11 @@ const Skills = () => {
         </Col>
         <Col xs={12} md={6} lg={4} className={styles.images}>
           <Image src={react} alt="Skill 4" className={styles.Image} />
-          <p className={styles.Description}>JQUERY</p>
+          <p className={styles.Description}>REACTJS</p>
         </Col>
         <Col xs={12} md={6} lg={4} className={styles.images}>
           <Image src={nodejs} alt="Skill 5" className={styles.Image} />
-          <p className={styles.Description}>REACTJS</p>
+          <p className={styles.Description}>NODEJS</p>
         </Col>
         <Col xs={12} md={6} lg={4} className={styles.images}>
           <Image src={bootstrap} alt="Skill 5" className={styles.Image} />
@@ -42,11 +42,11 @@ const Skills = () => {
         </Col>
         <Col xs={12} md={6} lg={4} className={styles.images}>
           <Image src={mongodb} alt="Skill 5" className={styles.Image} />
-          <p className={styles.Description}>TAILWIND CSS</p>
+          <p className={styles.Description}>MONGODB</p>
         </Col>
         <Col xs={12} md={6} lg={4} className={styles.images}>
           <Image src={figma} alt="Skill 5" className={styles.Image} />
-          <p className={styles.Description}>PHOTOSHOP</p>
+          <p className={styles.Description}>FIGMA</p>
         </Col>
       </Row>
     </Container>
