@@ -1,82 +1,112 @@
 .Contain {
-    background-color: #f3f3f3 !important;
-    height: 600px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 70px;
+}
+
+.leftside {
+  width: 100%;
+  padding: 20px;
+}
+
+.rightside {
+  margin-right: 150px;
+}
+
+h1 {
+  color: #000;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+}
+
+.paragraph {
+  background: linear-gradient(90.06deg, #da8889 -15.48%, #9baab5 40.77%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 2rem !important;
+  font-weight: 700;
+  letter-spacing: 0px;
+}
+
+.button {
+  font-weight: 600;
+  border: none;
+  background-color: #000;
+  color: #fafafa;
+  height: 50px;
+  width: 180px;
+}
+
+.button:hover {
+  background-color: #3ec1bf;
+  color: #fafafa;
+  transition: 0.5s;
+}
+
+.button2 {
+  margin-left: 1rem;
+  background-color: transparent;
+  border: 5px solid #000;
+  color: #000;
+}
+
+.button2:hover {
+  background-color: #000;
+  color: #fafafa;
+}
+
+@media screen and (max-width: 1024px) {
+  .leftside {
+    margin-left: -50px;
   }
-  
-  .Box {
-    width: 100%;
-    padding: 20px;
+
+  .rightside {
+    margin-right: 90px;
   }
-  
+
   h1 {
-    color: #000;
-    font-size: 3rem;
-    font-weight: bold;
-    font-family: "Roboto", sans-serif;
-    font-weight: bolder;
+    font-size: 2rem;
   }
-  
-  .Paragraph {
-    color: #000 !important;
-    font-size: 2rem !important;
-    font-weight: 700;
-    letter-spacing: 0px;
+
+  .paragraph {
+    font-size: 1.5rem !important;
   }
-  
+
+  .button {
+    height: 40px;
+    width: 140px;
+  }
+}
+
+@media screen and (max-width: 414px) {
   .Button {
-    font-weight: 600;
-    border: none;
-    background-color: #000;
-    color: #fafafa;
-    height: 50px;
-    width: 180px;
+    font-size: 12px;
+    height: 40px;
+    width: 120px;
   }
-  
-  .Button:hover {
-    background-color: #3ec1bf;
-    color: #fafafa;
-    transition: 0.5s;
+}
+
+@media screen and (max-width: 390px) {
+  .Contain {
+    flex-direction: column;
+    justify-content: space-between;
   }
-  
-  .Button2 {
-    margin-left: 1rem;
+
+  .leftside {
+    text-align: center;
+    margin-right: 100px;
+    margin-top: 50px;
   }
-  
-  @media screen and (max-width: 555px) {
-    .Box {
-      width: 100%;
-    }
-  
-    h1 {
-      font-size: 2rem;
-    }
-  
-    .Paragraph {
-      font-size: 1.5rem !important;
-    }
-  
-    .Button {
-      height: 40px;
-      width: 140px;
-    }
+
+  .rightside {
+    margin-bottom: 100px;
+    margin-right: 120px;
   }
-  
-  @media screen and (max-width: 414px) {
-    .Button {
-      font-size: 12px;
-      height: 40px;
-      width: 120px;
-    }
-  }
-  
-  @media screen and (max-width: 320px) {
-    .Button {
-      height: 35px;
-      width: 100px;
-    }
-  }
-  
+}

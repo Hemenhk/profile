@@ -1,81 +1,92 @@
-.Container {
-    background-color: #121212;
-    height: 800px;
-    padding-top: 100px;
+.container {
+  background-color: #242424;
+  height: 800px;
+  padding-top: 100px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.imageContainer {
+  justify-content: center;
+  gap: 5%;
+}
+
+.image1 {
+  height: 300px;
+  width: auto;
+}
+
+.image2 {
+  height: 300px;
+  width: auto;
+}
+
+.heading {
+  color: #fafafa;
+  font-size: 2.5rem;
+  font-weight: 900;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none !important;
+  margin-bottom: 40px;
+}
+
+.textContainer {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+.paragraph {
+  color: #fafafa;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0px !important;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
-  
-  .Row {
-    display: flex;
-    justify-content: space-between;
+
+  .heading {
+    font-size: 2rem;
+    padding-top: 30px;
   }
-  
-  .Avatar {
+
+  .textContainer {
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .paragraph {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .textContainer {
     width: 100%;
-    height: auto;
-    border-radius: 50%;
-    margin-left: 25px;
   }
-  
-  .Heading {
-    color: #fafafa;
-    font-size: 3rem;
-    font-weight: 900;
-    font-family: "Roboto", sans-serif;
-    text-decoration: none !important;
+
+  .paragraph {
+    font-size: 1rem;
   }
-  
-  .TextContainer {
-    text-align: right;
-    width: 40%;
-    margin-right: 25px;
+
+  .image1 {
+    height: 150px;
+    width: auto;
   }
-  
-  .Paragraph {
-    color: #fafafa;
-    font-size: 1.6rem;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    letter-spacing: 0px !important;
+
+  .image2 {
+    height: 150px;
+    width: auto;
   }
-  
-  @media screen and (max-width: 767px) {
-    .Container {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-  
-    .Heading {
-      font-size: 2rem;
-      padding-top: 30px;
-    }
-  
-    .Avatar {
-      width: 200px;
-      height: 200px;
-      margin: 0 auto;
-    }
-  
-    .TextContainer {
-      text-align: center;
-      width: 75%;
-      margin: 0 auto;
-    }
-  
-    .Paragraph {
-      font-size: 1rem;
-    }
-  }
-  
-  @media screen and (max-width: 414px) {
-    .TextContainer {
-      text-align: center;
-      width: 80%;
-      margin: 0 auto;
-    }
-  
-    .Paragraph {
-      font-size: 1rem;
-    }
-  }
-  
+}

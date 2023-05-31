@@ -1,52 +1,57 @@
 .Container {
-    height: 100%;
-    background-color: #121212;
+  height: 100%;
+  background-color: #242424;
+}
+
+.Skills {
+  padding: 20px;
+  text-align: center;
+}
+
+.Heading {
+  color: #fafafa;
+  font-size: 3rem;
+  font-weight: 900;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none !important;
+  margin-bottom: 60px;
+}
+
+.Description {
+  color: #fafafa;
+  font-weight: 500;
+  font-size: 1.5rem !important;
+}
+
+.Image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.Image:hover {
+  animation: rotate 0.3s linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
   }
-  
-  .Skills {
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.Description {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 1024px) {
+  .images {
     padding: 20px;
-    text-align: center;
   }
-  
-  .Heading {
-    color: #fafafa;
-    font-size: 3rem;
-    font-weight: 900;
-    font-family: "Roboto", sans-serif;
-    text-decoration: none !important;
-    margin-bottom: 60px;
-  }
-  
-  .Description {
-    color: #fafafa;
-    font-weight: 500;
-    font-size: 1.5rem !important;
-  }
-  
-  .Image {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .Image:hover {
-    animation: rotate 0.3s linear;
-  }
-  
-  @keyframes rotate{
-    0%{
-        transform: rotate(0deg);
-    }
-    50%{
-        transform: rotate(180deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-  }
-  .Description {
-    font-size: 18px;
-  }
-  
+}

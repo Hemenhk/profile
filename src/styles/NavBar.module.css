@@ -1,54 +1,59 @@
-.Header {
-    background-color: white;
-    height: 6%;
+.header {
+  background-color: transparent;
+  height: 6%;
+  margin: 0px 50px;
+}
+
+.logo {
+  color: #000;
+  font-size: 2.5rem;
+  font-weight: 900;
+  font-family: "Roboto", sans-serif;
+  padding-left: 25px;
+}
+
+.logo:hover {
+  color: #dc8485;
+  transition: 0.5s;
+}
+
+.links {
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+}
+.links::after {
+  content: "";
+  width: 0%;
+  height: 4px;
+  border-radius: 20px;
+  background: #dc8485;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.links:hover::after {
+  width: 100%;
+}
+
+.nav {
+  gap: 1rem;
+  padding-right: 25px;
+}
+
+.toggle {
+  outline: none !important;
+  border: none !important;
+}
+
+@media screen and (max-width: 390px) {
+  .logo {
+    font-size: 1.6rem;
   }
-  
-  .Logo {
-    color: #000;
-    font-size: 2.5rem;
-    font-weight: 900;
-    font-family: "Roboto", sans-serif;
-    padding-left: 25px;
+
+  .header {
+    margin: 0;
   }
-  
-  .Logo:hover {
-    color: #3ec1bf;
-    transition: .5s;
-  }
-  
-  .Links {
-    color: #000;
-    font-size: 1.5rem;
-    font-weight: bold;
-    font-family: "Roboto", sans-serif;
-  }
-  .Links::after {
-    content: "";
-    width: 0%;
-    height: 4px;
-    background: #3ec1bf;
-    display: block;
-    margin: auto;
-    transition: 0.5s;
-  }
-  
-  .Links:hover::after {
-    width: 100%;
-  }
-  
-  .Nav {
-    gap: 1rem;
-    padding-right: 25px;
-  }
-  
-  .Toggle {
-    outline: none !important;
-    border: none !important;
-  }
-  
-  @media screen and (max-width: 414px) {
-    .Logo {
-      font-size: 1.6rem;
-    }
-  }
-  
+}
