@@ -21,11 +21,11 @@ const Home = () => {
     <Container fluid className={styles.Contain} id="home">
       <Row xs={12} className={styles.leftside}>
         <Col>
-          <h1>HEMEN</h1>
-          <h1>HIWA KAMAL</h1>
-          <p className={styles.paragraph}>FRONT END DEVELOPER</p>
+          <h1 className={styles.slideInLeft}>HEMEN</h1>
+          <h1 className={styles.slideInLeft}>HIWA KAMAL</h1>
+          <p className={`${styles.paragraph} ${styles.slideInLeft}`}>FRONT END DEVELOPER</p>
         </Col>
-        <div>
+        <div className={styles.slideInBelow}>
           <button onClick={downloadPDF} className={styles.button}>
             DOWNLOAD CV
           </button>
@@ -36,7 +36,7 @@ const Home = () => {
           </a>
         </div>
       </Row>
-      <Row className={styles.rightside}>
+      <Row className={`${styles.rightside} ${styles.slideInRight}`}>
         <img src={image} alt="profileimage" />
       </Row>
     </Container>

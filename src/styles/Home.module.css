@@ -1,5 +1,50 @@
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-250px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 100;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(250px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 100;
+  }
+}
+
+@keyframes slideInBelow {
+  from {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 100;
+  }
+}
+
+.slideInLeft {
+  animation: slideInLeft 1s ease-in;
+}
+
+.slideInRight {
+  animation: slideInRight 1s ease-in;
+}
+
+.slideInBelow {
+  animation: slideInBelow 1s ease-in;
+}
+
 .Contain {
-  height: 600px;
+  height: 100ch;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -11,10 +56,11 @@
 .leftside {
   width: 100%;
   padding: 20px;
+  margin-left: 50px;
 }
 
 .rightside {
-  margin-right: 150px;
+  margin-right: 250px;
 }
 
 h1 {
@@ -64,11 +110,43 @@ h1 {
 
 @media screen and (max-width: 1024px) {
   .leftside {
-    margin-left: -50px;
+    margin-left: -40px;
   }
 
   .rightside {
-    margin-right: 90px;
+    margin-right: 150px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .paragraph {
+    font-size: 2rem !important;
+  }
+
+  .button {
+    height: 50px;
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .Contain {
+    height: 800px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .leftside {
+    text-align: center;
+    margin-right: 100px;
+    margin-top: 50px;
+  }
+
+  .rightside {
+    margin-bottom: 100px;
+    margin-right: 120px;
   }
 
   h1 {
@@ -85,15 +163,7 @@ h1 {
   }
 }
 
-@media screen and (max-width: 414px) {
-  .Button {
-    font-size: 12px;
-    height: 40px;
-    width: 120px;
-  }
-}
-
-@media screen and (max-width: 390px) {
+/* @media screen and (max-width: 390px) {
   .Contain {
     flex-direction: column;
     justify-content: space-between;
@@ -109,4 +179,4 @@ h1 {
     margin-bottom: 100px;
     margin-right: 120px;
   }
-}
+} */

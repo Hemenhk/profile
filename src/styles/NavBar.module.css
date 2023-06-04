@@ -1,7 +1,26 @@
+@keyframes slideInAbove {
+  from {
+    transform: translateY(-25px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 100;
+  }
+}
+
+.slideInAbove {
+  animation: slideInAbove 1s ease-in;
+}
+
 .header {
   background-color: transparent;
   height: 6%;
   margin: 0px 50px;
+}
+
+.toggle {
+  outline: none !important;
 }
 
 .logo {

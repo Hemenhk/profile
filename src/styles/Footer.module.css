@@ -1,12 +1,9 @@
-/* .Container {
-    height: 150px;
-    background-color: #f3f3f3;
-} */
-
 .Row {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 50px 0;
 }
 
 .ATag {

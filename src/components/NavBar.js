@@ -4,7 +4,7 @@ import styles from "../styles/NavBar.module.css";
 
 const NavBar = () => {
   return (
-    <Navbar expanded="lg" className={`sticky-top ${styles.header}`}>
+    <Navbar expand="lg" className={`sticky-top ${styles.header} ${styles.slideInAbove}`}>
       <Container fluid className={styles.navbar}>
         <Navbar.Brand className={styles.logo} href="#home">
           HHK

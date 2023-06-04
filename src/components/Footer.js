@@ -5,8 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => (
-  <footer className={styles.Container}>
-    <Container fluid>
+  <footer>
+    <Container className={styles.container} fluid>
       <Row className={styles.Row}>
         <Col xs="auto" className="text-center">
           <a href="https://linkedin.com" target="_blank" rel="noreferrer" className={styles.ATag}>
