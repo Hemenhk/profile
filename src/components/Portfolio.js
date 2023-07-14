@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import { BsGithub } from "react-icons/bs";
 import styles from "../styles/Portfolio.module.css";
-import img1 from "../assets/sh.png";
+import img1 from "../assets/akkadian-ecommerce.png";
 import img2 from "../assets/BnB.png";
 
 const Portfolio = () => {
@@ -17,11 +17,11 @@ const Portfolio = () => {
               <p>
                 {" "}
                 <a
-                  href="https://hemenhk.github.io/strength-house/index.html"
+                  href="https://hemenhk.github.io/akkadian-ecommerce/"
                   rel="noreferrer"
                   target="_blank"
                 >
-                  Strength House
+                  Akkadian Ecommerce
                 </a>
               </p>
               <a
