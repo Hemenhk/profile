@@ -1,39 +1,75 @@
 import React from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
-import styles from "../styles/NavBar.module.css";
+import { Flex, Heading, Text } from "@chakra-ui/react";
 
+import NavDrawer from "./NavDrawer";
+import styles from "../styles/NavBar.module.css";
 const NavBar = () => {
   return (
-    <Navbar expand="lg" className={`sticky-top ${styles.header} ${styles.slideInAbove}`}>
-      <Container fluid className={styles.navbar}>
-        <Navbar.Brand className={styles.logo} href="#home">
-          HHK
-        </Navbar.Brand>
-        <Navbar.Toggle
-          className={styles.toggle}
-          aria-controls="basic-navbar-nav"
-        />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className={`ms-auto ${styles.nav}`}>
-            <Nav.Link className={styles.links} href="#home">
-              HOME
-            </Nav.Link>
-            <Nav.Link className={styles.links} href="#about">
-              ABOUT
-            </Nav.Link>
-            <Nav.Link className={styles.links} href="#portfolio">
-              PORTFOLIO
-            </Nav.Link>
-            <Nav.Link className={styles.links} href="#skills">
-              SKILLS
-            </Nav.Link>
-            <Nav.Link className={styles.links} href="#contact">
-              CONTACT
-            </Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <Flex
+      justifyContent={"space-between"}
+      alignItems={"center"}
+      margin={"2rem 4rem"}
+      className={styles.slideInAbove}
+    >
+      <Flex ml={"2rem"}>
+        <Heading>HHK</Heading>
+      </Flex>
+      <Flex justifyContent={"space-between"} gap={6} className={styles.mainNav}>
+        <a href="#home">
+          <Text
+            className={styles.links}
+            fontFamily={"roboto"}
+            fontSize={"1rem"}
+            textTransform={"uppercase"}
+          >
+            Home
+          </Text>
+        </a>
+        <a href="#about">
+          <Text
+            className={styles.links}
+            fontFamily={"roboto"}
+            fontSize={"1rem"}
+            textTransform={"uppercase"}
+          >
+            About
+          </Text>
+        </a>
+        <a href="#portfolio">
+          <Text
+            className={styles.links}
+            fontFamily={"roboto"}
+            fontSize={"1rem"}
+            textTransform={"uppercase"}
+          >
+            Portfolio
+          </Text>
+        </a>
+        <a href="#skills">
+          <Text
+            className={styles.links}
+            fontFamily={"roboto"}
+            fontSize={"1rem"}
+            textTransform={"uppercase"}
+          >
+            Skills
+          </Text>
+        </a>
+        <a href="#contact">
+          <Text
+            className={styles.links}
+            fontFamily={"roboto"}
+            fontSize={"1rem"}
+            textTransform={"uppercase"}
+          >
+            Contact
+          </Text>
+        </a>
+      </Flex>
+      <Flex className={styles.sideDrawer}>
+        <NavDrawer />
+      </Flex>
+    </Flex>
   );
 };
 

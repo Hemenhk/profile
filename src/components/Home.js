@@ -23,9 +23,11 @@ const Home = () => {
         <Col>
           <h1 className={styles.slideInLeft}>HEMEN</h1>
           <h1 className={styles.slideInLeft}>HIWA KAMAL</h1>
-          <p className={`${styles.paragraph} ${styles.slideInLeft}`}>FRONT END DEVELOPER</p>
+          <p className={`${styles.paragraph} ${styles.slideInLeft}`}>
+            FRONT END DEVELOPER
+          </p>
         </Col>
-        <div className={styles.slideInBelow}>
+        <div className={`${styles.slideInBelow} ${styles.btn_container}`}>
           <button onClick={downloadPDF} className={styles.button}>
             DOWNLOAD CV
           </button>
