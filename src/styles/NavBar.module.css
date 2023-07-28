@@ -13,16 +13,6 @@
   animation: slideInAbove 1s ease-in;
 }
 
-.header {
-  background-color: transparent;
-  height: 6%;
-  margin: 0px 50px;
-}
-
-.toggle {
-  outline: none !important;
-}
-
 .logo {
   color: #000;
   font-size: 2.5rem;
@@ -38,9 +28,6 @@
 
 .links {
   color: #000;
-  font-size: 1.5rem;
-  font-weight: bold;
-  font-family: "Inter", sans-serif;
 }
 .links::after {
   content: "";
@@ -57,22 +44,17 @@
   width: 100%;
 }
 
-.nav {
-  gap: 1rem;
-  padding-right: 25px;
+.sideDrawer {
+  display: none;
 }
 
-.toggle {
-  outline: none !important;
-  border: none !important;
-}
-
-@media screen and (max-width: 390px) {
-  .logo {
-    font-size: 1.6rem;
+@media (max-width: 768px) {
+ 
+  .mainNav {
+    display: none;
   }
 
-  .header {
-    margin: 0;
+  .sideDrawer {
+    display: flex;
   }
 }
